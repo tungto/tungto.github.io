@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="icon" type="text/css" href="resources/img/icon.png">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <!-- google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
 	<title>Tung To</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>To Xuan Tung</h1>
-	<div class="thongtin">
-		<b>Tung To</b>
-		<b>Front end developer</b>
+	<header>
+		<nav>
+			<div class="row navbar">
+				<img src="resources/img/icon.png" alt="logo" class="logo">
+				<ul class="main-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#home">About</a></li>
+					<li><a href="#home">Projects</a></li>
+					<li><a href="#home">Blog</a></li>
+					<li><a href="#home">Contact</a></li>
+				</ul>
+				<a href="#home" class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+			</div>
+			<div class="row">
+				<div class="avatar">
+					<img src="resources/img/avatar.jpg" alt="avatar">
+				</div>
+				<div class="header-text">
+					<h1>Hello! My name is Tung. <br>Learner, Front-End Developer.</h1>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="section about-me">
+		<div class="row">
+			<h2>About Me</h2>
+			<p>I'm a self-taught front end developer. Love to improve myself through experience, tralvel, work and learn</p>
+			<h3>Skills</h3>
+			<div class="row skills">
+				<div class="col span-1-of-6 skill css">
+					<img src="resources/img/css.png" alt="css">
+				</div>
+				<div class="list col span-5-of-6">
+						<span>Bootstrap 4</span>
+						<span>SASS</span>
+						<span>Flexbox</span>
+						<span>Grid</span>
+				</div>
+			</div>
+			<div class="row skills">
+				<div class="col span-1-of-6 skill js">
+					<img src="resources/img/js.png" alt="js">
+				</div>
+				<div class="list col span-5-of-6">
+						<span>ES 6</span>
+						<span>React</span>
+						<span>Redux</span>
+						<span>jQuery</span>
+				</div>
+			</div>
 	</div>
+	</section>
+	<section class="portfolio">
+		<div class="row">
+			<h2>Portfolio</h2>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-3">
+				<img src="resources/img/todolist-project.svg" alt="project-todolist">
+				<p>To do list. Build with React frame work</p>
+				<a href="https://tungto.github.io/todolist/" class="btn">Repository</a>
+
+				<a href="https://tungto.github.io/todolist/" class="btn">Demo</a>
+			</div>
+			<div class="col span-1-of-3">
+				<img src="resources/img/todolist-project.svg" alt="project-todolist">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				<a href="https://tungto.github.io/todolist/" class="btn">Repository</a>
+
+				<a href="https://tungto.github.io/todolist/" class="btn">Demo</a>
+			</div>
+			<div class="col span-1-of-3">
+				<img src="resources/img/todolist-project.svg" alt="project-todolist">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				<a href="https://tungto.github.io/todolist/" class="btn">Repository</a>
+				<a href="https://tungto.github.io/todolist/" class="btn">Demo</a>
+			</div>
+			
+		</div>
+	</section>
+	<section class="contact">
+		<div class="row">
+			
+				<a href=""><img src="resources/img/facebook-icon.png" alt=""></i></a>
+				<a href=""><img src="resources/img/github-icon.png" alt=""></a>
+				<a href=""><img src="resources/img/twitter-icon.png" alt=""></a>
+				<a href=""><img src="resources/img/linkedin-icon.png" alt=""></a>
+		
+			<p>&copy; 2018 Tung To</p>
+				
+			
+		</div>
+
+	</section>
 </body>
 </html>
