@@ -261,7 +261,7 @@ ul.main-nav {
 /* PORTFOLIO */
 /* ----------------------------------------------- */
 section.portfolio {
-    background-image: url('./img/portfolio-bg.jpg');
+    background-image: url('./img/portfolio-bg.jpeg');
     background-position: center;
     background-size: cover;
 }
