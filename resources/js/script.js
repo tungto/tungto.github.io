@@ -1,84 +1,50 @@
-$(document).ready(function() {
+var nav = document.querySelector('.js--main-nav');
+var icon = document.querySelector(".js--nav-icon ");
+var contact = document.getElementById("contact");
+var aboutMe = document.getElementById("about-me");
+var portfolio = document.getElementById("portfolio");
+
+function toggleNav(){
+    nav.classList.toggle("show-main-nav")
+}
+
+icon.addEventListener("click", toggleNav)
+
+document.querySelector("ul.main-nav").addEventListener("click", toggleNav )
+
+
+//get the position
+// var posContact = contact.offsetTop;
+
+// document.getElementById('toContact').onclick = function () {
+//    console.log('click')
+//   scrollTo(document.getElementsByTagName("header"), posContact-30, 600);   
+// }
     
-    
-    /* For the sticky navigation */
-    $('.js--section-features').waypoint(function(direction) {
-        if (direction == "down") {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
-    }, {
-      offset: '60px;'
-    });
-    
-    
-    /* Scroll on buttons */
-    $('.js--scroll-to-plans').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
-    });
-    
-    $('.js--scroll-to-start').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
-    });
-    
-    
-    /* Navigation scroll */
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    
-    
-    /* Animations on scroll */
-    $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
-    
-    $('.js--wp-2').waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
-    
-    $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
-    
-    $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
-    }, {
-        offset: '50%'
-    });
-    
-    
-    /* Mobile navigation */
-    $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon i');
+// function scrollTo(element, to, duration) {
+//     var start = element.scrollTop,
+//         change = to - start,
+//         currentTime = 0,
+//         increment = 20;
         
-        nav.slideToggle(200);
-        
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
-        } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');
-        }        
-    });
-});
+//     var animateScroll = function(){        
+//         currentTime += increment;
+//         var val = Math.easeInOutQuad(currentTime, start, change, duration);
+//         element.scrollTop = val;
+//         if(currentTime < duration) {
+//             setTimeout(animateScroll, increment);
+//         }
+//     };
+//     animateScroll();
+// }
+
+// //t = current time
+// //b = start value
+// //c = change in value
+// //d = duration
+// Math.easeInOutQuad = function (t, b, c, d) {
+//     t /= d/2;
+//     if (t < 1) return c/2*t*t + b;
+//     t--;
+//     return -c/2 * (t*(t-2) - 1) + b;
+// };
