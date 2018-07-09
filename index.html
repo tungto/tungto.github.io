@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -9,40 +10,54 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<!-- google fonts -->
-	 <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-	<link href="//fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+	<!-- <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<link href="//fonts.googleapis.com/css?family=Lalezar" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<title>Tung To</title>
 </head>
+
 <body>
-	<header>
+	<header class="js--home">
 		<nav>
-			<div class="row navbar">
+			<div class="navbar">
 				<img href="#home" src="resources/img/icon.png" alt="logo" class="logo">
 				<ul class="main-nav js--main-nav">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about-me">About</a></li>
-					<li><a href="#portfolio">Projects</a></li>
-					<li><a href="#home">Blog</a></li>
-					<li id="toContact"><a href="#contact">Contact</a></li>
+					<li>
+						<a href="#home" class="js--scroll-to-home">Home</a>
+					</li>
+					<li>
+						<a href="#about-me" class="js--scroll-to-about">About</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="js--scroll-to-projects">Projects</a>
+					</li>
+					<li>
+						<a href="#home" class="js--scroll-to-blog">Blog</a>
+					</li>
+					<li id="toContact">
+						<a href="#contact" class="js--scroll-to-contact">Contact</a>
+					</li>
 				</ul>
-				<a href="#home" class="mobile-nav-icon js--nav-icon i"><i class="fas fa-align-justify"></i></a>
+				<a href="#home" class="mobile-nav-icon js--nav-icon i">
+					<i class="fas fa-align-justify"></i>
+				</a>
 			</div>
 			<div class="row">
 				<div class="avatar">
 					<img src="resources/img/avatar.jpg" alt="avatar">
 				</div>
 				<div class="header-text">
-					<h1>Hello! My name is Tung. <br>Learner, Front-End Developer.</h1>
+					<h1>Hello! My name is Tung.
+						<br>Learner, Front-End Developer.</h1>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<section class="section" id="about-me">
+	<section class="section js--section-about" id="about-me">
 		<div class="row">
 			<h2>About Me</h2>
 			<p>I'm a self-taught front end developer. Love to improve myself through experience, tralvel, work and learn</p>
@@ -52,10 +67,10 @@
 					<img src="resources/img/css.png" alt="css">
 				</div>
 				<div class="list col span-5-of-6">
-						<span>Bootstrap 4</span>
-						<span>SASS</span>
-						<span>Flexbox</span>
-						<span>Grid</span>
+					<span>Bootstrap 4</span>
+					<span>SASS</span>
+					<span>Flexbox</span>
+					<span>Grid</span>
 				</div>
 			</div>
 			<div class="row skills">
@@ -63,15 +78,15 @@
 					<img src="resources/img/js.png" alt="js">
 				</div>
 				<div class="list col span-5-of-6">
-						<span>ES 6</span>
-						<span>React</span>
-						<span>Redux</span>
-						<span>jQuery</span>
+					<span>ES 6</span>
+					<span>React</span>
+					<span>Redux</span>
+					<span>jQuery</span>
 				</div>
 			</div>
-	</div>
+		</div>
 	</section>
-	<section class="section" id="portfolio">
+	<section class="section js--wp" id="portfolio">
 		<div class="row">
 			<h2>Portfolio</h2>
 		</div>
@@ -96,6 +111,8 @@
 				<a href="https://github.com/tungto/memory-game" class="btn">Repository</a>
 				<a href="https://tungto.github.io/memory-game/" class="btn">Demo</a>
 			</div>
+		</div>
+		<div class="row">
 			<div class="col span-1-of-3">
 				<img src="resources/img/pig-game.png" alt="project-pig-game">
 				<p>Pig Game - DOM manipulation</p>
@@ -106,13 +123,24 @@
 	</section>
 	<section class="section" id="contact">
 		<div class="row">
-				<a href=""><i class="fab fa-facebook-square"></i></a>
-				<a href=""><i class="fab fa-twitter-square"></i></a>
-				<a href=""><i class="fab fa-github-square"></i></a>
-				<a href=""><i class="fab fa-linkedin"></i></a>
+			<a href="">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+			<a href="">
+				<i class="fab fa-twitter-square"></i>
+			</a>
+			<a href="">
+				<i class="fab fa-github-square"></i>
+			</a>
+			<a href="">
+				<i class="fab fa-linkedin"></i>
+			</a>
 			<p>&copy; 2018 Tung To</p>
 		</div>
 	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 	<script type="text/javascript" src="./resources/js/script.js"></script>
 </body>
+
 </html>
