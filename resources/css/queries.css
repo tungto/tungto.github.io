@@ -11,15 +11,22 @@
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)),
+      url("./img/bg-1-md.jpg");
+  }
   body {
     font-size: 18px;
   }
   section {
     padding: 60px 0;
   }
-}
-section.section {
-  padding: 20px 0;
+  section#portfolio {
+    background-image: url("./img/bg-2-md.jpg");
+  }
+  section.section {
+    padding: 20px 0;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -33,6 +40,11 @@ section.section {
   header {
     height: auto;
     padding-top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)),
+      url("./img/bg-1-sm.jpg");
+  }
+  section#portfolio {
+    background-image: url("./img/bg-2-sm.jpg");
   }
   .row,
   .col {
