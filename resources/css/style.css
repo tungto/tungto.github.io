@@ -228,7 +228,6 @@ ul.main-nav {
 
 /* Sticky navi */
 .sticky {
-  animation-duration: 3s;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -240,7 +239,6 @@ ul.main-nav {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   padding: 3px 0;
-  /* color: #555; */
 }
 .sticky .logo {
   height: 50px;
@@ -288,7 +286,6 @@ section#portfolio {
   background-image: url("./img/portfolio-bg.jpeg");
   background-position: center;
   background-size: cover;
-  /* padding-bottom: 80px; */
 }
 section#portfolio .row {
   margin-top: 50px;
@@ -325,7 +322,6 @@ section#portfolio .col .btn:hover {
 /* ----------------------------------------------- */
 #contact {
   text-align: center;
-  /* padding: 30px; */
 }
 #contact a {
   border-bottom: none;

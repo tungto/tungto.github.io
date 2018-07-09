@@ -4,7 +4,6 @@ $(document).ready(function () {
     var waypoint = new Waypoint({
         element: $('.js--section-about')[0],
         handler: function (direction) {
-            console.log('run')
             if (direction === "down") {
                 $('.navbar').addClass('sticky');
             } else if (direction === "up") {
