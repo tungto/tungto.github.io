@@ -42,9 +42,9 @@ $(document).ready(function () {
     var waypoint = new Waypoint({
         element: $('.js--wp')[0],
         handler: function (direction) {
-            $('.js--wp').addClass('animated bounceInUp');
+            $('.js--wp').addClass('animated fadeIn');
         },
-        offset: 300
+        offset: 600
     });
     /* ----------------------- Mobile nav ----------------*/
 

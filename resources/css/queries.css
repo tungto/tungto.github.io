@@ -12,6 +12,24 @@
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
   header {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.35)),
+        to(rgba(0, 0, 0, 0.2))
+      ),
+      url("./img/bg-1-md.jpg");
+    background-image: -webkit-linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("./img/bg-1-md.jpg");
+    background-image: -o-linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("./img/bg-1-md.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)),
       url("./img/bg-1-md.jpg");
   }
@@ -40,6 +58,24 @@
   header {
     height: auto;
     padding-top: 0;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.35)),
+        to(rgba(0, 0, 0, 0.2))
+      ),
+      url("./img/bg-1-sm.jpg");
+    background-image: -webkit-linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("./img/bg-1-sm.jpg");
+    background-image: -o-linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("./img/bg-1-sm.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)),
       url("./img/bg-1-sm.jpg");
   }
@@ -59,6 +95,9 @@
   }
 
   ul.main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -165,6 +204,8 @@
     width: 60%;
   }
   section#portfolio img:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
   section#portfolio .col .btn {
