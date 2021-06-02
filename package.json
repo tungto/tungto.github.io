@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungto/tungto.github.io.git"
+  },
+  "author": "Tung To",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tungto/tungto.github.io/issues"
+  },
+  "homepage": "https://tungto.github.io",
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
+  }
+}
