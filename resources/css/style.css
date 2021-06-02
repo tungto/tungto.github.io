@@ -11,7 +11,7 @@ html,
 body {
   background-color: #fff;
   color: #555;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -21,14 +21,14 @@ body {
   zoom: 1;
 }
 .clearfix:after {
-  content: ".";
+  content: '.';
   clear: both;
   display: block;
   height: 0;
   visibility: hidden;
 }
-@import url("https://fonts.googleapis.com/css?family=Gaegu:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
@@ -129,7 +129,7 @@ a:active {
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type="submit"] {
+input[type='submit'] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -142,7 +142,7 @@ input[type="submit"] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type="submit"] {
+input[type='submit'] {
   background-color: #e01d42;
   border: 1px solid #e67e22;
   color: #fff;
@@ -157,8 +157,8 @@ input[type="submit"] {
 
 .btn:hover,
 .btn:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+input[type='submit']:hover,
+input[type='submit']:active {
   background-color: #e01d42;
 }
 
@@ -184,16 +184,16 @@ header {
       from(rgba(0, 0, 0, 0.46)),
       to(rgba(0, 0, 0, 0.2))
     ),
-    url("./img/backgroud-header.jpg");
+    url('./img/backgroud-header.jpg');
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.46),
       rgba(0, 0, 0, 0.2)
     ),
-    url("./img/backgroud-header.jpg");
+    url('./img/backgroud-header.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.2)),
-    url("./img/backgroud-header.jpg");
+    url('./img/backgroud-header.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.2)),
-    url("./img/backgroud-header.jpg");
+    url('./img/backgroud-header.jpg');
   background-size: cover;
   background-position: center;
   height: auto;
@@ -217,7 +217,7 @@ header .row::after {
   transform: rotate(-35deg);
 }
 h1 {
-  font-family: "Gaegu", cursive;
+  font-family: 'Gaegu', cursive;
   font-weight: bold;
 }
 header .navbar {
@@ -249,7 +249,7 @@ ul.main-nav {
 
 .main-nav li a {
   color: #fff;
-  font-family: "Lalezar", cursive;
+  font-family: 'Lalezar', cursive;
 }
 .mobile-nav-icon {
   display: none;
@@ -282,12 +282,17 @@ ul.main-nav {
 .row .avatar {
   padding: 50px 20px 0;
 }
+.header-text h1,
+.header-text h3 {
+  text-transform: capitalize;
+  color: #fff;
+}
 
 /* ----------------------------------------------- */
 /* ABOUT ME */
 /* ----------------------------------------------- */
 #about-me p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 #about-me h3 {
   margin: 20px 0;
@@ -314,7 +319,7 @@ ul.main-nav {
 /* PORTFOLIO */
 /* ----------------------------------------------- */
 section#portfolio {
-  background-image: url("./img/portfolio-bg.jpeg");
+  background-image: url('./img/portfolio-bg.jpeg');
   background-position: center;
   background-size: cover;
 }
@@ -326,17 +331,21 @@ section#portfolio .col {
 }
 section#portfolio img {
   width: 80%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  max-height: 210px;
+  max-width: 290px;
+  border-radius: 5px;
+
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 section#portfolio img:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  /* -webkit-filter: grayscale(0);
+  filter: grayscale(0); */
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
 }
 
-section#portfolio .col p {
+section#portfolio .col p.pj-description {
   margin: 15px 0;
 }
 section#portfolio .col .btn {
@@ -345,7 +354,7 @@ section#portfolio .col .btn {
   border-radius: 2px;
   display: inline-block;
   color: #fff;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 100;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -356,6 +365,10 @@ section#portfolio .col .btn:hover {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
+/* section#portfolio .pj-description {
+  width: 10rem;
+} */
 
 /* ----------------------------------------------- */
 /* CONTACT */
